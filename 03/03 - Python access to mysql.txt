@@ -1,0 +1,17 @@
+1. Il fork di un repository consiste in una copia di quella repository.
+2. È un interfaccia che permette di inserire dei comandi sql per lavorare su dei database.
+3. Con il comando "mysql" si entra, mentre con il comando "exit" si esce.
+4. Main.py contiene il codice che ci permette di collegarci alla cli di mysql e creare un nuovo database di 
+   nome "mydatabase".
+5. Il campo "Host" specifica l'indirizzo ip o il nome dell'host del server MySQL a cui ci si sta connetendo, 
+   "User" indica il nome utente che verrà usato per autenticarsi sul server MySQL e "Password" specifica la pw associata all'utente che stiamo utilizzando.
+6. "Main.py" permette di collegarsi ad un database generale creando poi uno all'interno con nome 
+   "mydatabase".
+7. Tramite la libreria "mysql" ci si connette a mysql, si crea un cursore e gli si passa il comando sql che 
+   vogliamo eseguire nel metodo execute.
+8. Stessa pratica della domanda 7 solo che il codice all'interno di execute ora sarà quello per la creazione 
+   di una tabella.
+9. Passando all'interno della funzione execute il codice per l'inserimento e una lista contenente tuple che 
+   saranno i valori da inserire.
+10. Nel comanda execute passeremo sempre il comando da eseguire, poi tramite la funzione fetchall andiamo a 
+    memorizzare il risultato ottenuto all'interno di una variabile che poi andremo a scandire tramite un ciclo

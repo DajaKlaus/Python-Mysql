@@ -1,0 +1,17 @@
+import mysql.connector
+
+mydb = mysql.connector.connect (
+    host = "localhost",
+    user = "root",
+    password = "Portiere20_05",
+    database = "Animali"
+)
+
+mycursor = mydb.cursor()
+
+mycursor.execute("select * from mammiferi")
+
+myresult = mycursor.fetchall()
+
+for x in myresult:
+    print(x)
