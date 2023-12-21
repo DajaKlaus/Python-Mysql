@@ -1,0 +1,13 @@
+1. Il comando pip serve a gestire le varie librerie per python.
+2. Una libreria è un insieme di moduli, funzioni e procedure già scritte.
+3. Tramite il comando "pip install nome_pachetto".
+4. La libreria di flask serve per poter sviluppare app web in python.
+5. Un server web è un software progettato per rispondere alle chiamate http da parte di un client.
+6. @app.route("/"): Questa riga crea una route nell'applicazione Flask. Il decoratore @app.route("/") indica che la funzione successiva deve essere chiamata quando viene effettuata una richiesta HTTP al percorso specificato.
+def hello(): Questa riga definisce la funzione hello(). Questa funzione sarà chiamata quando un utente accede all'URL specificato nella route. Nel caso specifico, quando un utente accede alla radice ("/").
+return "Hello, World!": Ritorna la stringa "Hello, World!" come risposta alla chiamata http effettuata.
+7. Il protocollo tcp utilizza le porte per gestire la comunicazione tra applicazioni su computer diversi.
+8. Una richiesta http è un messaggio inviato da un client ad un server per ottenere dei dati specifici.
+9. Http è un protocollo di comunicazione utilizzato al trasferimento di informazioni su internet.
+10. TCP è uno dei principali protocolli di trasmissione su internet. Svolge un ruolo fondamentale nell'assicurare una trasmissione affidabile dei dati tra dispositivi su una rete.
+11. Un protocollo è un insieme di regole e convenzioni che definiscono come i dati devono essere trasmessi.
