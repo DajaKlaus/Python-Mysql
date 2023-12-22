@@ -4,7 +4,8 @@
 4. Main.py contiene il codice che ci permette di collegarci alla cli di mysql e creare un nuovo database di 
    nome "mydatabase".
 5. Il campo "Host" specifica l'indirizzo ip o il nome dell'host del server MySQL a cui ci si sta connetendo, 
-   "User" indica il nome utente che verrà usato per autenticarsi sul server MySQL e "Password" specifica la pw associata all'utente che stiamo utilizzando.
+   "User" indica il nome utente che verrà usato per autenticarsi sul server MySQL e "Password" specifica la pw associata 
+   all'utente che stiamo utilizzando.
 6. "Main.py" permette di collegarsi ad un database generale creando poi uno all'interno con nome 
    "mydatabase".
 7. Tramite la libreria "mysql" ci si connette a mysql, si crea un cursore e gli si passa il comando sql che 

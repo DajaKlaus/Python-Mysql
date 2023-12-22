@@ -1,0 +1,12 @@
+	1. L'url è una stringa di caratteri che identifica univocamente la posizione di una risorsa su internet.
+	2. La route definisce la relazione tra un url e un insieme di azioni da eseguire quando quell'url viene richiamato.
+	3. Codice:
+		a. @app.route("/getAllDataInHtml"): Questa è una decorazione fornita da Flask che definisce la funzione getAllData che gestirà le richieste per l'URL "/getAllDataInHtml".
+		b. def getAllData(): Definizione della funzione getAllData. Questa funzione viene eseguita quando un utente visita l'URL specificato.
+		c. mycursor.execute("SELECT * FROM CLASH_ROYALE.Clash_Unit"): Esegui una query SQL per selezionare tutti i dati dalla tabella Clash_Unit nel database CLASH_ROYALE.
+		d. myresult = mycursor.fetchall(): Recupera tutti i risultati della query eseguita.
+		e. result = []: Crea una lista vuota chiamata 'result' che verrà utilizzata per contenere i risultati della query.
+		f. for x in myresult: Itera attraverso ogni risultato ottenuto dalla query.
+		g. print(x): Stampa ciascun risultato. Questo potrebbe essere utile per il debug, ma la stampa non sarà visibile al client che fa la richiesta.
+		h. result.append(x): Aggiunge ciascun risultato alla lista 'result'.
+        i. return result: Restituisce la lista 'result' al client che ha effettuato la richiesta. A seconda del contesto, questa risposta può essere convertita in formato JSON o utilizzata per generare una pagina HTML tramite un template.
