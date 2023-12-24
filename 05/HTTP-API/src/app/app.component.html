@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="header">
+        <div class="title">
+            <h1 routerLink="">API TEST</h1>
+        </div>
+
+        <hr>
+
+        <div class="search-category">
+            <ul class="category-list">
+                <li [routerLink]="['/generic', 'getAllDataIn']">get All Data</li>
+                <li [routerLink]="['/generic', 'air_transport']">air transport</li>
+            </ul>
+            <ul class="category-list">
+                <li [routerLink]="['/generic', 'epic_units']">epic units</li>
+            </ul>
+            <ul class="category-list">
+                <li [routerLink]="['/generic', 'speed_units']">speed (60)</li>
+                <li [routerLink]="['/generic', 'cost']">cost = 4</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hero-search">
+        <router-outlet></router-outlet> 
+    </div>
+</div>

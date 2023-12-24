@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* ------------------------------------- */
+/* ?Basic style? */
+/* ------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+    background-color: #222725;
+    color: #F5F5F5;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    cursor: default;
+}

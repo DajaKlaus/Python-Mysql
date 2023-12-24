@@ -1,4 +1,5 @@
 import json
+from flask_cors import CORS
 import mysql.connector
 from flask import Flask, jsonify
 
@@ -12,6 +13,7 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/")
 def hello():

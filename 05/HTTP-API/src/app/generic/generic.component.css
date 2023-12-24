@@ -1,0 +1,10 @@
+div {
+    margin: 20px auto;
+    width: 70%;
+    text-align: justify;
+}
+
+p {
+    line-height: 1.5rem;
+    text-shadow: 5px 3px 5px #2a2f2d;
+}
