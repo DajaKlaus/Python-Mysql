@@ -8,7 +8,7 @@ mydb = mysql.connector.connect(
   host="localhost",
   user="root",
   password="Portiere20_05",
-  database="CLASH_ROYALE"
+  database="F1"
 )
 mycursor = mydb.cursor()
 
@@ -21,7 +21,7 @@ def hello():
 
 @app.route("/getAllDataInHtml")
 def getAllData():
-    mycursor.execute("SELECT * FROM CLASH_ROYALE.Clash_Unit")
+    mycursor.execute("SELECT * FROM F1.F1_data")
     row_headers=[x[0] for x in mycursor.description]
     myresult = mycursor.fetchall()
     result = [];
@@ -31,9 +31,9 @@ def getAllData():
         print(result)
     return json.dumps(result)
 
-@app.route("/air_transportHtml")
-def air_transport():
-    mycursor.execute("SELECT * FROM CLASH_ROYALE.Clash_Unit WHERE Transport = 'Air'")
+@app.route("/circuitRefHtml")
+def circuitRef():
+    mycursor.execute("SELECT circuitRef FROM F1.F1_data")
     row_headers=[x[0] for x in mycursor.description]
     myresult = mycursor.fetchall()
     result = [];
@@ -43,9 +43,9 @@ def air_transport():
         print(result)
     return json.dumps(result)
 
-@app.route("/epic_unitsHtml")
-def epic_units():
-    mycursor.execute("SELECT * FROM CLASH_ROYALE.Clash_Unit WHERE Rarity = 'Epic'")
+@app.route("/circuitRef_countryHtml")
+def circuitRef_country():
+    mycursor.execute("SELECT circuitRef, country FROM F1.F1_data")
     row_headers=[x[0] for x in mycursor.description]
     myresult = mycursor.fetchall()
     result = [];
@@ -55,9 +55,9 @@ def epic_units():
         print(result)
     return json.dumps(result)
 
-@app.route("/speed_unitsHtml")
-def speed_units():
-    mycursor.execute("SELECT * FROM CLASH_ROYALE.Clash_Unit WHERE Speed = 'Medium (60)'")
+@app.route("/circuitRef_nameHtml")
+def circuitRef_name():
+    mycursor.execute("SELECT circuitRef, name FROM F1.F1_data")
     row_headers=[x[0] for x in mycursor.description]
     myresult = mycursor.fetchall()
     result = [];
@@ -67,9 +67,9 @@ def speed_units():
         print(result)
     return json.dumps(result)
 
-@app.route("/costHtml")
-def cost():
-    mycursor.execute("SELECT * FROM CLASH_ROYALE.Clash_Unit WHERE Cost = '4'")
+@app.route("/circuitRef_locationHtml")
+def circuitRef_location():
+    mycursor.execute("SELECT circuitRef, location FROM F1.F1_data")
     row_headers=[x[0] for x in mycursor.description]
     myresult = mycursor.fetchall()
     result = [];

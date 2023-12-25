@@ -54,4 +54,4 @@ mycursor.execute("SELECT * FROM CLASH_ROYALE.Clash_Unit")
 myresult = mycursor.fetchall()
 
 for x in myresult:
-  print(x)
+    print(x)
